@@ -12,8 +12,8 @@ use React\Promise\Deferred;
  */
 class Sort
 {
-    /** @var int */
-    private static $maxThreads = 4;  // I have 4 cores total but let's try this out..
+    /** @var int This matches my # of cores currently, but experiment with different values! */
+    private static $maxThreads = 4;
     /** @var int Number of threads we need results from before we're done. */
     private static $waitingNum = 0;
     /** @var int[] */
